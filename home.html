@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
+
+  body, * {
+    font-family: 'Geist', 'Geist Sans', system-ui, sans-serif !important;
+  }
+</style>
+</head>
+<body class="h-auto bg-gray-100 ">
+    
+        <nav class=" bg-white border-red-200 h-[55px] flex items-center gap-3 w-full justify-between">
+            <div class="flex items-center gap-3 px-10">
+       <img src="assets/github-logo.png" class="h-[45px]" alt="">
+<h1 class="font-bold">GitHub Issues Tracker</h1>
+</div>
+<div class="flex gap-3 px-10">
+    <label class="input">
+  <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <g
+      stroke-linejoin="round"
+      stroke-linecap="round"
+      stroke-width="2.5"
+      fill="none"
+      stroke="currentColor"
+    >
+      <circle cx="11" cy="11" r="8"></circle>
+      <path d="m21 21-4.3-4.3"></path>
+    </g>
+  </svg>
+  <input type="search" required placeholder="Search" />
+</label>
+ <button class="btn btn-primary">+ New Issue</button>
+</div>
+ 
+        </nav>
+         <section class="mx-22" >
+          <div class=" rounded-lg shadow-sm flex pl-4 items-center gap-3  border-red-200 h-[100px] w-full mt-10 bg-white ">
+         <button class="btn btn-active btn-primary">Primary</button>
+         <button class="btn btn-active btn-primary">Primary</button>
+         <button class="btn btn-active btn-primary">Primary</button>
+          </div>
+
+          <div class="border-2  rounded-lg shadow-sm border-green-300 h-[900px] mt-7 w-full">
+           <div class=" shadow-sm bg-white border-red-200 h-[90px] flex items-center pl-3 gap-3 justify-between" >
+            <div class="flex gap-3">
+           <div class="">
+            <img class="h-[50px] border-10 border-gray-200 rounded-full " src="assets/Aperture.png" alt="">
+              </div> 
+              <div> 
+            <h1 class="font-bold"> <span class="font-bold">50</span> Issues</h1> 
+            <p>Track and manage your project issues</p>
+           </div>
+           </div>
+               <div class="flex items-center gap-4 text-sm font-medium text-gray-700">
+  
+  <div class="flex items-center gap-1.5 ">
+    <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+    <span>Open</span>
+  </div>
+
+
+  <div class="flex items-center gap-1.5 pr-4">
+    <span class="w-2.5 h-2.5 rounded-full bg-purple-500"></span>
+    <span>Closed</span>
+  </div>
+</div>
+
+           </div>
+          </div>     
+
+    </section>
+    
+    
+</body>
+</html>
