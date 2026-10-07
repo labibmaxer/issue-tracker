@@ -4,8 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
+
+  body, * {
+    font-family: 'Geist', 'Geist Sans', system-ui, sans-serif !important;
+  }
+</style>
 </head>
 <body>
-    
+    <header>
+       <section class=" h-[750px] bg-gray-100 pt-10 ">
+               <div class="  bg-white mx-auto rounded-xl  my-auto border-red-400 p-4 h-[700px] w-[500px]">
+                <div class="  text-center border-green-300 h-1/4 w-full ">
+                 <img class="mx-auto block" src="assets/github-logo.png" alt="">
+                 <h1 class="font-semibold text-[25px]">GitHub Issues Tracker</h1>
+                 <p class="text-[#64748B]">Sign in to manage your issues</p>
+                </div>
+
+          <div class="   text-center border-blue-300 mt-5 h-[230px] w-full ">
+            <fieldset class="fieldset">
+  <legend class="fieldset-legend text-[18px] ">Username</legend>
+  <input type="text" class="input w-full" placeholder="Enter username" />
+    <p class="text-[14px] text-[#4A00FF] label">Default : admin</p>
+</fieldset>
+
+   <fieldset class="fieldset">
+  <legend class="fieldset-legend text-[18px] ">Password</legend>
+  <input type="text" class="input w-full" placeholder="Enter password" />
+    <p class="text-[14px] text-[#4A00FF] label">Default : admin123</p>
+</fieldset>
+
+          </div>
+          <button class="btn btn-primary w-full">Submit</button>
+
+          <div class="flex items-center my-4">
+  <div class="grow border-t border-gray-300"></div>
+  <span class="px-3 text-gray-500 font-medium">OR</span>
+  <div class="grow border-t border-gray-300"></div>
+</div>
+<p class="text-center text-gray-500 mb-2">Demo Credentials:</p>
+
+<div class="bg-gray-100 rounded-lg p-4 text-center">
+  <p class="text-gray-700">
+    <span class="font-semibold">Username:</span> admin
+  </p>
+  <p class="text-gray-700 mt-1">
+    <span class="font-semibold">Password:</span> admin123
+  </p>
+</div>
+               </div>
+       </section>
+
+
+    </header>
 </body>
 </html>
