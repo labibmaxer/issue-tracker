@@ -40,7 +40,7 @@ const displayCards = (cards) => {
     </p>
   </div>
 
-  <!-- Tags / Badges Section -->
+ 
   <div class="flex flex-wrap gap-2 pt-1">
     <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-red-50 text-red-500 border border-red-200">
       <i class="fa-solid fa-bug text-[10px]"></i> BUG
@@ -90,3 +90,4 @@ const searchInput = document.getElementById('search-input');
 });
 displayCards(filteredIssues);
  });
+ 
