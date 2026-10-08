@@ -1,7 +1,7 @@
 const url = ('https://phi-lab-server.vercel.app/api/v1/lab/issues');
 fetch (url)
 .then (res => (res.json()))
-.then (data => displayCards (data));
+.then (data => displayCards (data.data));
 const displayCards = (cards) => {
     const container = document.getElementById('card-container');
     container.innerHTML ="";
@@ -12,7 +12,7 @@ const displayCards = (cards) => {
 
             const badgeBorder = IsOpen ? 'border-t-emerald-500' : 'border-t-purple-500';
 
-        card.innerHTML = `<div class="bg-white rounded-xl border border-gray-200 border-t-4 border-t-emerald-500 p-5 shadow-sm space-y-4 max-w-xs">
+        card.innerHTML = `<div class="bg-white rounded-xl border border-gray-200 border-t-4 ${badgeBorder} p-5 shadow-sm space-y-4 flex flex-col justify-between h-full">
   
   <!-- Title & Description Section -->
   <div class="space-y-2">
