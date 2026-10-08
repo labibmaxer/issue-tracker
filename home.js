@@ -1,10 +1,26 @@
+let allissues = [];
+
 const url = ('https://phi-lab-server.vercel.app/api/v1/lab/issues');
 fetch (url)
 .then (res => (res.json()))
-.then (data => displayCards (data.data));
+.then((data) => {
+  allissues = (data.data)
+  displayCards(allissues);
+});
 const displayCards = (cards) => {
     const container = document.getElementById('card-container');
+     const Total  = document.getElementById('total-value');
+     if(Total) {
+      Total.innerText = cards.length ;
+    }
     container.innerHTML ="";
+    cards.forEach((issue)=>{
+      if (issue.status === 'open'){
+          let Total = cards.length ; 
+      }
+    })
+
+
     cards.forEach ((issue) => {
         const card = document.createElement('div');
        
@@ -43,3 +59,22 @@ const displayCards = (cards) => {
 container.append(card);
     });
 }
+
+const All = document.getElementById('all-btn');
+const Open = document.getElementById('open-btn');
+const Closed = document.getElementById('closed-btn');
+
+All.addEventListener('click',  () => {
+     displayCards(allissues);
+});
+Open.addEventListener('click', () => {
+  const openIssues = allissues.filter((issue) => issue.status === 'open');
+  displayCards(openIssues);
+});
+
+
+Closed.addEventListener('click', () => {
+  const closedIssues = allissues.filter((issue) => issue.status === 'closed');
+  displayCards(closedIssues);
+});
+
