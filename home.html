@@ -49,14 +49,14 @@
          <button class="btn btn-active btn-primary">Primary</button>
           </div>
 
-          <div class="border-2  rounded-lg shadow-sm border-green-300 h-[900px] mt-7 w-full">
+          <div class=" rounded-lg shadow-sm border-green-300 h-[100px] mt-7 w-full">
            <div class=" shadow-sm bg-white border-red-200 h-[90px] flex items-center pl-3 gap-3 justify-between" >
             <div class="flex gap-3">
            <div class="">
             <img class="h-[50px] border-10 border-gray-200 rounded-full " src="assets/Aperture.png" alt="">
               </div> 
               <div> 
-            <h1 class="font-bold"> <span class="font-bold">50</span> Issues</h1> 
+            <h1 class="font-bold"> <span id="total-value" class="font-bold">50</span> Issues</h1> 
             <p>Track and manage your project issues</p>
            </div>
            </div>
@@ -73,10 +73,40 @@
     <span>Closed</span>
   </div>
 </div>
-
+ 
            </div>
           </div>     
+       <div id="card-container" class="bg-gray-100 h-auto grid grid-cols-4 gap-4">
+               <div class="bg-white rounded-xl border border-gray-200 border-t-4 border-t-emerald-500 p-5 shadow-sm space-y-4 max-w-xs">
+  
+  <!-- Title & Description Section -->
+  <div class="space-y-2">
+    <h3 class="font-bold text-slate-800 text-base leading-snug">
+      Fix Navigation Menu On Mobile Devices
+    </h3>
+    <p class="text-xs text-slate-400 line-clamp-2">
+      The navigation menu doesn't collapse properly on mobile devices...
+    </p>
+  </div>
 
+  <!-- Tags / Badges Section -->
+  <div class="flex flex-wrap gap-2 pt-1">
+    <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-red-50 text-red-500 border border-red-200">
+      <i class="fa-solid fa-bug text-[10px]"></i> BUG
+    </span>
+    <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-amber-50 text-amber-600 border border-amber-200">
+      <i class="fa-solid fa-life-ring text-[10px]"></i> HELP WANTED
+    </span>
+  </div>
+
+  <!-- Divider & Meta Footer -->
+  <div class="border-t border-gray-100 pt-3 text-[11px] text-slate-400 space-y-1">
+    <p>#1 by <span class="font-medium text-slate-500">john_doe</span></p>
+    <p>1/15/2024</p>
+  </div>
+
+</div>
+       </div>
     </section>
     
     <script src="home.js"></script>
