@@ -78,3 +78,15 @@ Closed.addEventListener('click', () => {
   displayCards(closedIssues);
 });
 
+const searchInput = document.getElementById('search-input');
+ searchInput.addEventListener('input', (e) =>{
+   const query = e.target.value.toLowerCase().trim();
+
+
+   const filteredIssues = allissues.filter ((issue) => {
+    const titleMatch = issue.title.toLowerCase().includes(query);
+    const descriptionMatch = issue.description.toLowerCase().includes(query);
+    return titleMatch || descriptionMatch ; 
+});
+displayCards(filteredIssues);
+ });
